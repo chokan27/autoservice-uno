@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Archivo, Space_Mono } from "next/font/google";
+import { Archivo, Barlow } from "next/font/google";
 import "./globals.css";
 
 const archivo = Archivo({ variable: "--font-display", subsets: ["latin"] });
-const mono = Space_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "700"] });
+const ui = Barlow({ variable: "--font-mono", subsets: ["latin"], weight: ["500", "600", "700", "800"] });
 
 export const metadata: Metadata = {
   title: "Autoservice UNO | Officina e Gommista a Milano",
@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="it"><body className={`${archivo.variable} ${mono.variable}`}>{children}</body></html>;
+  return <html lang="it"><body className={`${archivo.variable} ${ui.variable}`}>{children}</body></html>;
 }
