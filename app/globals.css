@@ -63,3 +63,11 @@ html{color-scheme:only light}
 .friendly-cta{margin:0;padding:55px max(6vw,24px);background:#171d27;border:0;border-left:5px solid var(--red);border-right:5px solid var(--red);outline:0;box-shadow:none}
 .friendly-cta .eyebrow{font-size:14px;font-weight:800;letter-spacing:.12em}
 @media(max-width:520px){.detailed-services article>a{font-size:14px!important}.friendly-cta{margin:0;padding:38px 20px}.friendly-cta .eyebrow{font-size:12px}}
+
+/* Officina: la foto diventa parte della pagina, non un blocco separato. */
+.about-page{position:relative;display:block;min-height:650px;background:#111722 url('/autoservice-uno/officina-esterno.png') 25% center/cover no-repeat}
+.about-page:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,23,34,.12) 0%,rgba(17,23,34,.34) 35%,rgba(17,23,34,.94) 60%,rgba(17,23,34,.99) 100%),linear-gradient(0deg,rgba(17,23,34,.45),transparent 55%)}
+.about-photo{display:none}
+.about-text{position:relative;z-index:1;width:min(690px,55%);min-height:650px;margin-left:auto;display:flex;flex-direction:column;justify-content:center;padding:72px max(6vw,54px)}
+@media(max-width:850px){.about-page{min-height:680px;background-position:36% center}.about-page:before{background:linear-gradient(90deg,rgba(17,23,34,.48),rgba(17,23,34,.9) 42%,rgba(17,23,34,.98))}.about-text{width:min(650px,78%);min-height:680px;padding:64px max(6vw,24px)}}
+@media(max-width:520px){.about-page{min-height:660px;background-position:30% center}.about-page:before{background:rgba(17,23,34,.84)}.about-text{width:100%;min-height:660px;padding:58px 20px}}
