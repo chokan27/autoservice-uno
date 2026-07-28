@@ -57,3 +57,8 @@ html{color-scheme:only light}
 .home-copy>p:last-of-type{max-width:590px;font-size:17px}
 @media(max-width:850px){.site-header nav{gap:27px}}
 @media(max-width:520px){.site-header nav{gap:22px;font-size:11px}.home-copy>p:last-of-type{font-size:14px}}
+
+/* Servizi: azioni ben leggibili e chiusura pagina senza fascia bianca. */
+.detailed-services article>a{display:inline-flex;align-items:center;min-height:32px;font-size:15px!important;font-weight:800;line-height:1.2;letter-spacing:.035em}
+.friendly-cta{margin:0;padding:55px max(6vw,24px);border-left:0;box-shadow:inset 6px 0 0 var(--red)}
+@media(max-width:520px){.detailed-services article>a{font-size:14px!important}.friendly-cta{margin:0;padding:38px 20px}}
