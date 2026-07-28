@@ -71,3 +71,10 @@ html{color-scheme:only light}
 .about-text{position:relative;z-index:1;width:min(690px,55%);min-height:650px;margin-left:auto;display:flex;flex-direction:column;justify-content:center;padding:72px max(6vw,54px)}
 @media(max-width:850px){.about-page{min-height:680px;background-position:36% center}.about-page:before{background:linear-gradient(90deg,rgba(17,23,34,.48),rgba(17,23,34,.9) 42%,rgba(17,23,34,.98))}.about-text{width:min(650px,78%);min-height:680px;padding:64px max(6vw,24px)}}
 @media(max-width:520px){.about-page{min-height:660px;background-position:30% center}.about-page:before{background:rgba(17,23,34,.84)}.about-text{width:100%;min-height:660px;padding:58px 20px}}
+
+/* Contatti: ruoli e descrizioni devono essere leggibili a colpo d'occhio. */
+.contact-cards small{display:block;font-family:var(--font-mono),Arial,sans-serif;font-size:13px;font-weight:700;line-height:1.35;letter-spacing:.07em}
+.contact-cards h2{margin:9px 0;font-size:25px}
+.contact-cards p{font-size:15px;line-height:1.5}
+.contact-note{font-size:14px!important}
+@media(max-width:520px){.contact-cards small{font-size:12px}.contact-cards h2{font-size:23px}.contact-cards p{font-size:14px}}
