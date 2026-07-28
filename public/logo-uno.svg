@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" role="img" aria-labelledby="title desc">
+  <title id="title">UNO</title>
+  <desc id="desc">Marchio Autoservice UNO in rosso e blu antracite, con la O ispirata a ruota e disco freno.</desc>
+  <g fill="#D7192D">
+    <path d="M18 18h56v92c0 20 10 30 30 30h42c20 0 30-10 30-30V18h56v94c0 45-28 68-82 68H100c-54 0-82-23-82-68V18Z"/>
+    <path d="M252 180V18h54l94 104V18h56v162h-53L308 76v104h-56Z"/>
+  </g>
+  <g transform="translate(510 90)">
+    <circle r="82" fill="#111722"/>
+    <circle r="59" fill="#FFFFFF"/>
+    <circle r="49" fill="#D7192D"/>
+    <circle r="13" fill="#FFFFFF"/>
+    <path d="M47-31c15 3 24 15 24 31s-9 28-24 31c-7-10-10-20-10-31s3-21 10-31Z" fill="#D7192D" stroke="#FFFFFF" stroke-width="8"/>
+  </g>
+</svg>
