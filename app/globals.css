@@ -78,3 +78,4 @@ html{color-scheme:only light}
 .contact-cards p{font-size:15px;line-height:1.5}
 .contact-note{font-size:14px!important}
 @media(max-width:520px){.contact-cards small{font-size:12px}.contact-cards h2{font-size:23px}.contact-cards p{font-size:14px}}
+.brand-logo{display:block;width:92px;height:34px;object-fit:contain}
