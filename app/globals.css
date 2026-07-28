@@ -19,3 +19,6 @@ footer{min-height:118px;padding:28px max(5vw,24px);display:flex;align-items:cent
 .header-cta:hover,.red-button:hover{background:var(--red)}
 .red-text,.friendly-cta .eyebrow,.footer-link:hover{color:var(--red)}
 .team-row article:nth-child(-n+2){background:var(--paper)}
+.home-hero{background-image:url('/autoservice-uno/officina-esterno.png')}
+.page-head{background-image:url('/autoservice-uno/autoservice-hero.png')}
+.about-photo{background-image:url('/autoservice-uno/officina-esterno.png')}
