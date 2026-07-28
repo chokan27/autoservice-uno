@@ -20,3 +20,16 @@ footer{min-height:120px;padding:28px max(5vw,24px);display:flex;align-items:cent
 @media(max-width:1000px){.home-services-grid.six{grid-template-columns:1fr 1fr}.detailed-services{grid-template-columns:1fr 1fr}}
 @media(max-width:850px){.site-header{height:108px;flex-wrap:wrap;padding-top:8px}.site-header nav{order:3;width:100%;display:flex;justify-content:flex-start;gap:25px;overflow-x:auto;padding:10px 0 12px}.site-header nav a{white-space:nowrap}.header-cta{margin-left:auto}.detailed-services{grid-template-columns:1fr}.friendly-cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:520px){.site-header{height:104px}.site-header nav{gap:20px}.home-services-grid.six{grid-template-columns:1fr}.detailed-services{padding:35px 20px 55px}.detailed-services article{min-height:380px}.friendly-cta{margin:0 20px 55px;padding:28px}.friendly-cta .button{width:auto}}
+.home-hero:before{background:linear-gradient(270deg,rgba(13,16,21,.97) 0%,rgba(13,16,21,.88) 38%,rgba(13,16,21,.28) 69%,rgba(13,16,21,.05) 100%),linear-gradient(0deg,rgba(10,12,16,.3),transparent 50%)}
+.home-copy{width:min(610px,52vw);margin-left:auto;margin-right:max(6vw,24px)}
+.home-copy h1{font-size:clamp(46px,5vw,72px)}
+@media(max-width:850px){.home-hero:before{background:linear-gradient(270deg,rgba(13,16,21,.96) 0%,rgba(13,16,21,.86) 55%,rgba(13,16,21,.35) 100%)}.home-copy{width:auto;margin-left:30vw;margin-right:24px}}
+@media(max-width:520px){.home-copy{margin-left:20px}.home-copy h1{font-size:40px}}
+.logo-mark{width:49px;font-size:13px;letter-spacing:.06em;font-weight:900}
+.site-header{border-bottom:3px solid var(--red)}
+.home-services-title{background:var(--red);color:#fff;padding:30px}.home-services-title .eyebrow{color:#fff}.home-services-title>a{color:#fff;border-bottom:1px solid #ffffff80;padding-bottom:5px}.home-services-grid>a{border-top:3px solid var(--red)}
+.page-head{position:relative;overflow:hidden}.page-head:after{content:"";position:absolute;right:-70px;bottom:-110px;width:310px;height:260px;background:var(--red);transform:skewX(-25deg);opacity:.92}.page-head>*{position:relative;z-index:1}
+.service-page-grid article:nth-child(2n){background:#f9f8f6}.service-page-grid article:hover{background:#fff4f4}
+.team-row article:nth-child(-n+2){background:#fff5f5}
+.home-services-grid.six h3{margin-top:8px}.detailed-services h2{margin-top:12px}
+@media(max-width:850px){.page-head:after{width:180px;height:180px;right:-90px;bottom:-100px}.home-services-title{padding:26px}}
