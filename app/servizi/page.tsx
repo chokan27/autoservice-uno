@@ -2,10 +2,12 @@ import Link from "next/link";
 import { Footer, Header } from "../components";
 
 const services=[
-  ["01","Autoriparazioni","Manutenzione ordinaria e straordinaria, diagnosi e riparazioni meccaniche."],
-  ["02","Gommista","Montaggio, equilibratura e riparazione pneumatici per ogni stagione."],
-  ["03","Controlli","Verifiche periodiche e controlli generali per viaggiare in sicurezza."],
-  ["04","Soccorso stradale","Assistenza e recupero del veicolo in caso di fermo o guasto."],
+  {n:"01",title:"Diagnosi elettronica",intro:"Individuiamo con precisione guasti e anomalie prima di intervenire.",items:["Lettura spie e centraline","Ricerca guasti elettronici","Controllo batteria e ricarica","Reset e verifiche dopo l’intervento"]},
+  {n:"02",title:"Tagliandi e manutenzione",intro:"La manutenzione periodica necessaria per mantenere l’auto efficiente.",items:["Cambio olio e filtri","Controllo livelli e liquidi","Cinghie e manutenzione programmata","Controllo generale del veicolo"]},
+  {n:"03",title:"Meccanica e sicurezza",intro:"Riparazioni meccaniche e componenti fondamentali per la guida.",items:["Freni e pastiglie","Sospensioni e ammortizzatori","Scarico e componenti motore","Frizione e organi meccanici"]},
+  {n:"04",title:"Gommista",intro:"Pneumatici controllati e montati correttamente in ogni stagione.",items:["Sostituzione pneumatici","Montaggio ed equilibratura","Riparazione forature","Controllo usura e pressione"]},
+  {n:"05",title:"Controlli del veicolo",intro:"Verifiche mirate prima di un viaggio, una scadenza o un acquisto.",items:["Controlli periodici","Verifica luci e tergicristalli","Controllo pre-viaggio","Valutazione generale dell’auto"]},
+  {n:"06",title:"Soccorso stradale",intro:"Assistenza quando l’auto si ferma e hai bisogno di una soluzione rapida.",items:["Recupero del veicolo","Trasporto in officina","Assistenza in caso di guasto","Contatto diretto con Cristian"]},
 ];
 
-export default function Servizi(){return <main><Header /><section className="page-head"><p className="eyebrow">I NOSTRI SERVIZI</p><h1>TUTTO QUELLO CHE SERVE.<br /><span>FATTO BENE.</span></h1><p>Un unico punto di riferimento per la manutenzione e la sicurezza della tua auto.</p></section><section className="service-page-grid">{services.map(([n,title,text])=><article key={n}><small>{n}</small><div className="service-icon">{n==="01"?"⚙":n==="02"?"●":n==="03"?"✓":"+"}</div><h2>{title}</h2><p>{text}</p><Link href="/contatti">RICHIEDI INFORMAZIONI →</Link></article>)}</section><Footer /></main>}
+export default function Servizi(){return <main><Header /><section className="page-head"><p className="eyebrow">SERVIZI COMPLETI</p><h1>CI PRENDIAMO CURA<br /><span>DELLA TUA AUTO.</span></h1><p>Dalla diagnosi al soccorso stradale: spiegazioni chiare, lavori concordati e un team sempre raggiungibile.</p></section><section className="detailed-services">{services.map(s=><article key={s.n}><small>{s.n}</small><h2>{s.title}</h2><p>{s.intro}</p><ul>{s.items.map(item=><li key={item}>{item}</li>)}</ul><Link href="/contatti">CHIEDI INFORMAZIONI →</Link></article>)}</section><section className="friendly-cta"><div><p className="eyebrow">NON SAI QUALE SERVIZIO SERVE?</p><h2>RACCONTACI IL PROBLEMA.</h2><p>Ti aiutiamo a capire il controllo giusto senza complicazioni.</p></div><Link className="button red-button" href="/contatti">PARLA CON NOI →</Link></section><Footer /></main>}

@@ -9,5 +9,5 @@ export function Header() {
 }
 
 export function Footer() {
-  return <footer><Link className="logo" href="/"><span className="logo-mark">1</span><span>AUTOSERVICE <b>UNO</b></span></Link><p>Via Caboto 39/B · Milano</p><p>Officina · Gommista · Controlli · Soccorso stradale</p></footer>;
+  return <footer><Link className="logo" href="/"><span className="logo-mark">1</span><span>AUTOSERVICE <b>UNO</b></span></Link><p>Via Caboto 39/B · Milano</p><p>Assistenza completa per la tua auto</p><Link className="footer-link" href="/contatti">CONTATTI →</Link></footer>;
 }
