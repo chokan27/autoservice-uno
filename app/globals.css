@@ -29,8 +29,11 @@ footer{min-height:118px;padding:28px max(5vw,24px);display:flex;align-items:cent
 .home-services-grid>a{background:#202733;border-right-color:rgba(255,255,255,.12);border-bottom-color:rgba(255,255,255,.12)}
 .home-services-grid p{color:rgba(255,255,255,.68)}
 .home-services-grid>a:hover{background:#262e3b;box-shadow:0 16px 38px rgba(0,0,0,.28)}
-.detailed-services{background:#e7e9ec}
-.detailed-services article{background:#f8f8f7}
+.detailed-services{background:#171d27;color:var(--white)}
+.detailed-services article{background:#202733;border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--red)}
+.detailed-services>article>p{color:rgba(255,255,255,.68)}
+.detailed-services ul{border-top-color:rgba(255,255,255,.14)}
+.detailed-services article:hover{background:#262e3b;box-shadow:0 16px 38px rgba(0,0,0,.28)}
 .team-row{background:#171d27}
 .team-row article,.team-row article:nth-child(-n+2){background:#202733;color:var(--white)}
 .team-row article:nth-child(-n+2){border-color:var(--red)}
