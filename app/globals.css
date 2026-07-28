@@ -34,6 +34,7 @@ footer{min-height:118px;padding:28px max(5vw,24px);display:flex;align-items:cent
 .detailed-services>article>p{color:rgba(255,255,255,.68)}
 .detailed-services ul{border-top-color:rgba(255,255,255,.14)}
 .detailed-services article:hover{background:#262e3b;box-shadow:0 16px 38px rgba(0,0,0,.28)}
+.detailed-services article>a{font-family:var(--font-mono),Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.055em}
 .team-row{background:#171d27}
 .team-row article,.team-row article:nth-child(-n+2){background:#202733;color:var(--white)}
 .team-row article:nth-child(-n+2){border-color:var(--red)}
