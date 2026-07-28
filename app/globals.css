@@ -45,3 +45,14 @@ footer{min-height:118px;padding:28px max(5vw,24px);display:flex;align-items:cent
 .contact-cards article,.contact-cards>a{border-bottom-color:rgba(255,255,255,.14)}
 .contact-cards article:hover,.contact-cards>a:hover{background:rgba(255,255,255,.05)}
 @media(max-width:520px){.contact-page>div:first-child{padding:28px}.contact-cards{padding:8px 20px}}
+
+/* Tipografia piu pulita per navigazione e azioni principali. */
+html{color-scheme:only light}
+.site-header nav{gap:38px;font-family:var(--font-display),Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.055em}
+.site-header nav a{padding:9px 0}
+.header-cta{padding:14px 21px;font-family:var(--font-display),Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.045em}
+.button{gap:28px;padding:17px 22px;font-family:var(--font-display),Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:.035em}
+.home-copy h1{font-weight:650;letter-spacing:-.052em}
+.home-copy>p:last-of-type{max-width:590px;font-size:17px}
+@media(max-width:850px){.site-header nav{gap:27px}}
+@media(max-width:520px){.site-header nav{gap:22px;font-size:11px}.home-copy>p:last-of-type{font-size:14px}}
