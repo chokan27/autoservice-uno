@@ -60,5 +60,6 @@ html{color-scheme:only light}
 
 /* Servizi: azioni ben leggibili e chiusura pagina senza fascia bianca. */
 .detailed-services article>a{display:inline-flex;align-items:center;min-height:32px;font-size:15px!important;font-weight:800;line-height:1.2;letter-spacing:.035em}
-.friendly-cta{margin:0;padding:55px max(6vw,24px);background:#171d27;border:0;border-top:2px solid var(--red);outline:0;box-shadow:none}
-@media(max-width:520px){.detailed-services article>a{font-size:14px!important}.friendly-cta{margin:0;padding:38px 20px}}
+.friendly-cta{margin:0;padding:55px max(6vw,24px);background:#171d27;border:0;border-left:5px solid var(--red);border-right:5px solid var(--red);outline:0;box-shadow:none}
+.friendly-cta .eyebrow{font-size:14px;font-weight:800;letter-spacing:.12em}
+@media(max-width:520px){.detailed-services article>a{font-size:14px!important}.friendly-cta{margin:0;padding:38px 20px}.friendly-cta .eyebrow{font-size:12px}}
