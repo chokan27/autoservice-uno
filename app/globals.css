@@ -258,3 +258,37 @@ footer{background:#0b1018}
   .team-row{padding-top:42px;padding-bottom:50px}
   .contact-cards{box-shadow:none}
 }
+
+/* Armonizzazione: passaggi meno netti e Contatti coerente con le altre pagine. */
+:root{--paper:#dedad7;--card:#f5f2f0}
+.home-services{background:linear-gradient(180deg,#1a212c 0,#343a44 34px,#bcb9b7 105px,var(--paper) 190px)}
+.home-services:after{content:"";position:absolute;z-index:-1;inset:112px 0 auto;height:1px;background:rgba(255,255,255,.5)}
+.home-services-grid>a{background:rgba(245,242,240,.96)}
+.home-services-grid>a:hover{background:#fff}
+.home-services-title:after{background:var(--paper)}
+
+.detailed-services{background:linear-gradient(180deg,#1b222d 0,#3a3f49 32px,#c5c1be 112px,var(--paper) 190px)}
+.detailed-services article{background:rgba(245,242,240,.97)}
+.team-row{background:linear-gradient(180deg,#1a212b 0,#41464e 30px,#c7c3c0 108px,var(--paper) 180px)}
+.team-row article,.team-row article:nth-child(-n+2){background:var(--card)}
+.team-row article:nth-child(-n+2){background:#eee7e6}
+.friendly-cta{box-shadow:14px 14px 0 #bdb9b6}
+
+.contact-page{padding-top:76px;padding-bottom:84px;background:linear-gradient(180deg,#171e29 0,#303641 34px,#c4c0bd 118px,var(--paper) 205px);color:var(--ink)}
+.contact-page>div:first-child{align-self:stretch;padding:42px 44px;background:#151c27;color:#fff;border-left:6px solid var(--red);box-shadow:12px 12px 0 #bdb9b6}
+.contact-page>div:first-child>p:last-child{color:rgba(255,255,255,.75)}
+.contact-cards{align-self:stretch;padding:18px 34px;background:var(--card);color:var(--ink);border-top:4px solid var(--red);box-shadow:12px 12px 0 #bdb9b6}
+.contact-cards article,.contact-cards>a{border-bottom-color:rgba(17,23,34,.16)}
+.contact-cards small{color:#6a6d72}
+.contact-cards p{color:#5f646b}
+.contact-cards article:hover,.contact-cards>a:hover{background:#fff}
+.contact-note{color:#6a6d72!important}
+
+@media(max-width:760px){
+  .home-services,.detailed-services,.team-row{background:linear-gradient(180deg,#272e38 0,#aaa7a5 54px,var(--paper) 112px)}
+  .home-services:after{display:none}
+  .contact-page{padding-top:54px;padding-bottom:58px;background:linear-gradient(180deg,#272e38 0,#aaa7a5 58px,var(--paper) 122px)}
+  .contact-page>div:first-child{padding:32px 26px;box-shadow:8px 8px 0 #bdb9b6}
+  .contact-cards{padding:10px 22px;box-shadow:8px 8px 0 #bdb9b6}
+  .friendly-cta{box-shadow:none}
+}
