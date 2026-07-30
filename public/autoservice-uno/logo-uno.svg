@@ -6,14 +6,14 @@
     <path d="M252 180V18h54l94 104V18h56v162h-53L308 76v104h-56Z"/>
   </g>
   <g transform="translate(535 110)">
-    <circle r="108" fill="#111722"/>
-    <circle r="78" fill="#F3F0EF"/>
-    <circle r="58" fill="none" stroke="#111722" stroke-width="8"/>
+    <circle r="104" fill="#111722" stroke="#D7192D" stroke-width="12"/>
+    <circle r="82" fill="#F3F0EF"/>
+    <circle r="62" fill="none" stroke="#111722" stroke-width="9"/>
     <circle r="20" fill="#111722"/>
     <circle cx="0" cy="-42" r="5" fill="#111722"/>
     <circle cx="42" cy="0" r="5" fill="#111722"/>
     <circle cx="0" cy="42" r="5" fill="#111722"/>
     <circle cx="-42" cy="0" r="5" fill="#111722"/>
-    <path d="M57-48c25 5 40 23 40 48S82 43 57 48C45 33 40 17 40 0s5-33 17-48Z" fill="#D7192D" stroke="#F3F0EF" stroke-width="8"/>
+    <path d="M59-52c27 5 43 25 43 52S86 47 59 52C46 36 40 18 40 0s6-36 19-52Z" fill="#D7192D" stroke="#F3F0EF" stroke-width="8"/>
   </g>
 </svg>
