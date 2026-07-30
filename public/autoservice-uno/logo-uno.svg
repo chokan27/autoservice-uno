@@ -5,15 +5,17 @@
     <path d="M18 18h56v92c0 20 10 30 30 30h42c20 0 30-10 30-30V18h56v94c0 45-28 68-82 68H100c-54 0-82-23-82-68V18Z"/>
     <path d="M252 180V18h54l94 104V18h56v162h-53L308 76v104h-56Z"/>
   </g>
-  <g transform="translate(535 110)">
-    <circle r="104" fill="#111722" stroke="#D7192D" stroke-width="12"/>
-    <circle r="82" fill="#F3F0EF"/>
-    <circle r="62" fill="none" stroke="#111722" stroke-width="9"/>
-    <circle r="20" fill="#111722"/>
-    <circle cx="0" cy="-42" r="5" fill="#111722"/>
-    <circle cx="42" cy="0" r="5" fill="#111722"/>
-    <circle cx="0" cy="42" r="5" fill="#111722"/>
-    <circle cx="-42" cy="0" r="5" fill="#111722"/>
-    <path d="M59-52c27 5 43 25 43 52S86 47 59 52C46 36 40 18 40 0s6-36 19-52Z" fill="#D7192D" stroke="#F3F0EF" stroke-width="8"/>
+  <g transform="translate(516 110)">
+    <circle r="108" fill="#D7192D"/>
+    <circle r="96" fill="#FFFFFF"/>
+    <circle r="84" fill="#111111"/>
+    <circle r="67" fill="#FFFFFF"/>
+    <circle r="55" fill="#D9DDE2"/>
+    <circle r="21" fill="#111111"/>
+    <circle cx="0" cy="-39" r="5" fill="#111111"/>
+    <circle cx="39" cy="0" r="5" fill="#111111"/>
+    <circle cx="0" cy="39" r="5" fill="#111111"/>
+    <circle cx="-39" cy="0" r="5" fill="#111111"/>
+    <path d="M55-48c25 5 41 23 41 48S80 43 55 48C44 33 39 17 39 0s5-33 16-48Z" fill="#D7192D" stroke="#FFFFFF" stroke-width="7"/>
   </g>
 </svg>
