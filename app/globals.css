@@ -90,6 +90,7 @@ html{color-scheme:only light}
 .home-services-grid>a:hover{background:#2b2028;border-color:var(--red)}
 .page-head{border-bottom:7px solid var(--red)}
 .page-head .eyebrow,.about-text .eyebrow{color:#ff4659}
+.page-head .eyebrow{font-size:14px;line-height:1.3;letter-spacing:.15em}
 .detailed-services{border-bottom:7px solid var(--red)}
 .detailed-services article:hover{border-color:var(--red)}
 .about-page{border-bottom:7px solid var(--red)}
@@ -155,6 +156,7 @@ footer p{color:rgba(255,255,255,.76)}
   .page-head{min-height:0;padding:56px 20px 52px;background-position:62% center}
   .page-head h1{font-size:clamp(36px,10.5vw,44px);line-height:1}
   .page-head>p:last-child{margin-top:20px;font-size:15px}
+  .page-head .eyebrow{font-size:12px}
 
   .detailed-services{padding:34px 20px 48px;gap:14px}
   .home-services-grid,.detailed-services,.team-row{grid-template-columns:1fr}
