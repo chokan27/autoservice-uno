@@ -6,7 +6,7 @@ export default function Home() {
     <section className="home-hero">
       <div className="home-copy">
         <p className="eyebrow">AUTOSERVICE UNO · MILANO</p>
-        <h1>LA TUA AUTO.<br /><span>IL NOSTRO MESTIERE.</span></h1>
+        <h1>LA TUA AUTO,<br /><span>IL NOSTRO MESTIERE.</span></h1>
         <p>Autoriparazioni, pneumatici, controlli e soccorso stradale. Competenza concreta e un contatto sempre diretto.</p>
         <div className="actions"><Link className="button red-button" href="/contatti">PRENOTA UN APPUNTAMENTO <span>→</span></Link><Link className="button ghost-button" href="/servizi">SCOPRI I SERVIZI</Link></div>
       </div>
