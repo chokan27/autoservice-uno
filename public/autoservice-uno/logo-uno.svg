@@ -7,9 +7,13 @@
   </g>
   <g transform="translate(535 110)">
     <circle r="108" fill="#111722"/>
-    <circle r="76" fill="#FFFFFF"/>
-    <circle r="63" fill="#D7192D"/>
-    <circle r="18" fill="#FFFFFF"/>
-    <path d="M61-40c19 4 31 19 31 40S80 36 61 40C52 27 48 14 48 0s4-27 13-40Z" fill="#D7192D" stroke="#FFFFFF" stroke-width="10"/>
+    <circle r="78" fill="#F3F0EF"/>
+    <circle r="58" fill="none" stroke="#111722" stroke-width="8"/>
+    <circle r="20" fill="#111722"/>
+    <circle cx="0" cy="-42" r="5" fill="#111722"/>
+    <circle cx="42" cy="0" r="5" fill="#111722"/>
+    <circle cx="0" cy="42" r="5" fill="#111722"/>
+    <circle cx="-42" cy="0" r="5" fill="#111722"/>
+    <path d="M57-48c25 5 40 23 40 48S82 43 57 48C45 33 40 17 40 0s5-33 17-48Z" fill="#D7192D" stroke="#F3F0EF" stroke-width="8"/>
   </g>
 </svg>
