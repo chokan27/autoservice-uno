@@ -292,3 +292,23 @@ footer{background:#0b1018}
   .contact-cards{padding:10px 22px;box-shadow:8px 8px 0 #bdb9b6}
   .friendly-cta{box-shadow:none}
 }
+
+/* Servizi compatti: due fasce distinte, tre schede per volta. */
+.detailed-services{display:block;padding:0;background:var(--paper)}
+.service-row{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding:72px max(6vw,24px) 42px;background:linear-gradient(180deg,#1b222d 0,#3a3f49 30px,#c5c1be 102px,var(--paper) 170px)}
+.service-row+ .service-row{padding-top:72px}
+.detailed-services .service-row article{min-height:0;padding:24px 30px 26px;display:flex;flex-direction:column}
+.detailed-services .service-row article>p{color:#666b73}
+.detailed-services .service-row ul{margin:14px 0 18px;padding:14px 0}
+.detailed-services .service-row li{padding:5px 0}
+.detailed-services .service-row article>a{position:static;margin-top:auto;min-height:26px;padding-top:6px}
+.friendly-cta{margin-top:0}
+
+@media(max-width:1000px){
+  .service-row{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .service-row{grid-template-columns:1fr;padding:54px 20px 30px;gap:14px;background:linear-gradient(180deg,#272e38 0,#aaa7a5 52px,var(--paper) 108px)}
+  .service-row+ .service-row{padding-top:54px}
+  .detailed-services .service-row article{padding:24px 26px 25px}
+}
