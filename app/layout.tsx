@@ -1,9 +1,23 @@
 import type { Metadata } from "next";
-import { Archivo, Barlow } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const archivo = Archivo({ variable: "--font-display", subsets: ["latin"] });
-const ui = Barlow({ variable: "--font-mono", subsets: ["latin"], weight: ["500", "600", "700", "800"] });
+const archivo = localFont({
+  src: "./fonts/archivo-latin.woff2",
+  variable: "--font-display",
+  weight: "100 900",
+  display: "swap",
+});
+const ui = localFont({
+  src: [
+    { path: "./fonts/barlow-500.woff2", weight: "500" },
+    { path: "./fonts/barlow-600.woff2", weight: "600" },
+    { path: "./fonts/barlow-700.woff2", weight: "700" },
+    { path: "./fonts/barlow-800.woff2", weight: "800" },
+  ],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Autoservice UNO | Officina e Gommista a Milano",
