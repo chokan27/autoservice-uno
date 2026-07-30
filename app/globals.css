@@ -19,9 +19,9 @@ footer{min-height:118px;padding:28px max(5vw,24px);display:flex;align-items:cent
 .header-cta:hover,.red-button:hover{background:var(--red)}
 .red-text,.friendly-cta .eyebrow,.footer-link:hover{color:var(--red)}
 .team-row article:nth-child(-n+2){background:var(--paper)}
-.home-hero{background-image:url('/autoservice-uno/officina-esterno-uno.png')}
+.home-hero{background-image:url('/autoservice-uno/officina-esterno-uno-v4.png')}
 .page-head{background-image:url('/autoservice-uno/autoservice-hero.png')}
-.about-photo{background-image:url('/autoservice-uno/officina-esterno-uno.png')}
+.about-photo{background-image:url('/autoservice-uno/officina-esterno-uno-v4.png')}
 
 /* Tema piu deciso: meno superfici bianche, piu antracite e rosso UNO. */
 .home-services{background:#171d27;color:var(--white)}
@@ -65,7 +65,7 @@ html{color-scheme:only light}
 @media(max-width:520px){.detailed-services article>a{font-size:14px!important}.friendly-cta{margin:0;padding:38px 20px}.friendly-cta .eyebrow{font-size:12px}}
 
 /* Officina: la foto diventa parte della pagina, non un blocco separato. */
-.about-page{position:relative;display:block;min-height:650px;background:#111722 url('/autoservice-uno/officina-esterno-uno.png') 25% center/cover no-repeat}
+.about-page{position:relative;display:block;min-height:650px;background:#111722 url('/autoservice-uno/officina-esterno-uno-v4.png') 25% center/cover no-repeat}
 .about-page:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,23,34,.12) 0%,rgba(17,23,34,.34) 35%,rgba(17,23,34,.94) 60%,rgba(17,23,34,.99) 100%),linear-gradient(0deg,rgba(17,23,34,.45),transparent 55%)}
 .about-photo{display:none}
 .about-text{position:relative;z-index:1;width:min(690px,55%);min-height:650px;margin-left:auto;display:flex;flex-direction:column;justify-content:center;padding:72px max(6vw,54px)}
@@ -78,8 +78,9 @@ html{color-scheme:only light}
 .contact-cards p{font-size:15px;line-height:1.5}
 .contact-note{font-size:14px!important}
 @media(max-width:520px){.contact-cards small{font-size:12px}.contact-cards h2{font-size:23px}.contact-cards p{font-size:14px}}
-.brand-logo{display:block;width:168px;height:58px;object-fit:contain}
-@media(max-width:520px){.brand-logo{width:145px;height:50px}.logo>span{display:none}}
+.brand-logo{display:block;width:142px;height:44px;object-fit:contain}
+@media(max-width:1100px){.site-header{height:108px;flex-wrap:wrap;padding-top:8px}.site-header nav{order:3;width:100%;justify-content:center;gap:30px;overflow-x:auto;padding:9px 0 12px}.site-header nav a{white-space:nowrap}.header-cta{margin-left:auto}}
+@media(max-width:520px){.brand-logo{width:128px;height:40px}.logo>span{display:none}.site-header nav{justify-content:flex-start}}
 
 /* Identita UNO: rosso piu presente, senza perdere la base professionale. */
 .home-hero{border-bottom:8px solid var(--red)}
