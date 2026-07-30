@@ -209,3 +209,52 @@ footer p{color:rgba(255,255,255,.76)}
   .home-copy{width:62vw;padding-right:32px}
   .home-copy h1{font-size:clamp(46px,6vw,62px)}
 }
+
+/* Restyling premium ispirato al riferimento: avorio, antracite e rosso UNO. */
+:root{--paper:#f1eeec;--red:#d7192d;--ink:#101620;--card:#ffffff}
+body{background:var(--paper)}
+.site-header{background:#0b1018;box-shadow:0 8px 28px rgba(0,0,0,.2)}
+.header-cta,.red-button{box-shadow:inset 0 -3px 0 rgba(90,0,12,.28)}
+
+.home-services{position:relative;isolation:isolate;padding-top:78px;padding-bottom:86px;background:var(--paper);color:var(--ink);border-top:0}
+.home-services:before{content:"";position:absolute;z-index:-1;left:-90px;bottom:-120px;width:270px;height:330px;background:linear-gradient(145deg,transparent 0 34%,#d8d3d1 34% 52%,transparent 52% 100%);transform:rotate(-5deg)}
+.home-services-title{background:var(--red);color:#fff;border-left:0;border-bottom:7px solid #970b1c;box-shadow:0 20px 44px rgba(103,10,25,.2)}
+.home-services-title:after{content:"";position:absolute;right:-22px;bottom:-22px;width:44px;height:44px;background:var(--paper);transform:rotate(45deg)}
+.home-services-grid{border-color:rgba(17,23,34,.13)}
+.home-services-grid>a{background:rgba(255,255,255,.86);color:var(--ink);border-right-color:rgba(17,23,34,.13);border-bottom-color:rgba(17,23,34,.13);box-shadow:inset 0 3px 0 var(--red)}
+.home-services-grid p{color:#666b73}
+.home-services-grid>a:hover{background:#fff;border-color:rgba(17,23,34,.16);box-shadow:inset 0 3px 0 var(--red),0 18px 40px rgba(17,23,34,.13)}
+
+.page-head{border-bottom:0;box-shadow:inset 0 -7px 0 var(--red)}
+.page-head:after{right:-110px;bottom:-170px;width:360px;height:300px;background:#a90d22;opacity:.9}
+.detailed-services{position:relative;isolation:isolate;padding-top:72px;padding-bottom:86px;background:var(--paper);color:var(--ink);border-bottom:0}
+.detailed-services:before{content:"";position:absolute;z-index:-1;left:-130px;top:90px;width:260px;height:520px;background:#ded9d7;transform:skewY(-18deg)}
+.detailed-services article{background:rgba(255,255,255,.9);color:var(--ink);border:1px solid rgba(17,23,34,.12);border-top:4px solid var(--red);box-shadow:0 10px 30px rgba(17,23,34,.05)}
+.detailed-services>article>p{color:#666b73}
+.detailed-services ul{border-top-color:rgba(17,23,34,.13)}
+.detailed-services article:hover{background:#fff;box-shadow:0 18px 42px rgba(17,23,34,.13)}
+.friendly-cta{margin:0 max(6vw,24px) 78px;padding:48px 54px;background:#101722;border-left:6px solid var(--red);border-right:0;box-shadow:16px 16px 0 #d9d4d2}
+
+.about-page{border-bottom:0;box-shadow:inset 0 -7px 0 var(--red)}
+.team-row{position:relative;isolation:isolate;padding-top:68px;padding-bottom:78px;background:var(--paper);box-shadow:none}
+.team-row:after{content:"";position:absolute;z-index:-1;right:-90px;bottom:-80px;width:230px;height:260px;background:var(--red);transform:skewX(-24deg)}
+.team-row article,.team-row article:nth-child(-n+2){background:#fff;color:var(--ink);border:1px solid rgba(17,23,34,.1);border-bottom:4px solid var(--red);box-shadow:0 10px 26px rgba(17,23,34,.06)}
+.team-row article:nth-child(-n+2){background:#f9f4f4}
+.team-row article p{color:#666b73}
+.team-row article>div{background:#111722;box-shadow:inset 0 -4px 0 var(--red)}
+
+.contact-page{position:relative;isolation:isolate;background:#151c27}
+.contact-page:after{content:"";position:absolute;z-index:-1;right:-90px;bottom:-130px;width:260px;height:330px;background:#a90d22;transform:skewX(-20deg)}
+.contact-page>div:first-child{border-left:6px solid var(--red)}
+.contact-cards{background:#1e2632;border-top:4px solid var(--red);box-shadow:18px 18px 0 rgba(7,10,15,.28)}
+footer{background:#0b1018}
+
+@media(max-width:760px){
+  .home-services{padding-top:54px;padding-bottom:60px}
+  .home-services:before,.detailed-services:before,.team-row:after,.contact-page:after{display:none}
+  .home-services-title:after{right:-14px;bottom:-14px;width:28px;height:28px}
+  .detailed-services{padding-top:42px;padding-bottom:54px}
+  .friendly-cta{margin:0;padding:40px 20px;box-shadow:none}
+  .team-row{padding-top:42px;padding-bottom:50px}
+  .contact-cards{box-shadow:none}
+}
