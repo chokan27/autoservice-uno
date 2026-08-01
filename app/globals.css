@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+.maintenance-page{position:relative;min-height:100svh;display:grid;place-items:center;overflow:hidden;padding:32px;background:#111722;color:#fff}
+.maintenance-page:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 80% 20%,rgba(215,25,45,.22),transparent 28%),linear-gradient(135deg,transparent 0 62%,rgba(215,25,45,.08) 62% 70%,transparent 70%)}
+.maintenance-accent{position:absolute;top:0;right:8%;width:clamp(90px,12vw,190px);height:42%;background:#d7192d;transform:skewX(-18deg);transform-origin:top;opacity:.95}
+.maintenance-card{position:relative;z-index:1;width:min(920px,100%);padding:clamp(34px,7vw,86px);border-left:6px solid #d7192d;background:rgba(13,18,28,.92);box-shadow:0 30px 90px rgba(0,0,0,.38)}
+.maintenance-brand{margin:0 0 32px;font:800 13px var(--font-mono),Arial,sans-serif;letter-spacing:.15em}.maintenance-brand strong{color:#d7192d}
+.maintenance-card h1{margin:0;font-size:clamp(46px,8vw,104px);font-weight:750;line-height:.88;letter-spacing:-.055em}.maintenance-card h1 span{color:#d7192d}
+.maintenance-card>p:not(.maintenance-brand){max-width:620px;margin:34px 0 0;color:rgba(255,255,255,.72);font-size:clamp(16px,2vw,20px);line-height:1.6}
+.maintenance-line{width:80px;height:4px;margin:36px 0 22px;background:#d7192d}
+.maintenance-card address{font:700 12px var(--font-mono),Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;font-style:normal;color:rgba(255,255,255,.8)}
+@media(max-width:520px){.maintenance-page{padding:18px}.maintenance-card{border-left-width:4px}.maintenance-accent{right:-14%;height:32%}.maintenance-card h1{font-size:clamp(42px,14vw,68px)}}
+
 :root{--red:#d7192d;--ink:#111722;--paper:#f3f0ef;--white:#fff;--muted:#6e7279;--line:rgba(17,23,34,.14)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-display),Arial,sans-serif}main{overflow:hidden}a{color:inherit;text-decoration:none}a,button{transition:color .25s ease,background-color .25s ease,border-color .25s ease,transform .25s ease}::selection{background:var(--red);color:var(--white)}
 .site-header{height:76px;position:sticky;top:0;z-index:30;display:flex;align-items:center;padding:0 max(5vw,24px);background:var(--ink);color:var(--white);border-bottom:3px solid var(--red)}
