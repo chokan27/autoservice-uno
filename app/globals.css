@@ -391,3 +391,26 @@ footer .footer-wordmark{color:#fff}
   .wordmark small{font-size:7px;letter-spacing:.13em}
   .footer-wordmark{margin-bottom:8px}
 }
+
+/* Logo ufficiale trasparente. */
+.brand-image-link{display:flex;align-items:center;flex:0 0 auto}
+.brand-image{display:block;width:360px;height:102px;object-fit:contain;object-position:left center}
+.site-header{height:112px}
+.home-hero{height:calc(100vh - 112px)}
+.footer-brand-image{margin-right:auto}
+footer .brand-image{width:350px;height:112px}
+
+@media(max-width:1100px){
+  .site-header{height:128px}
+  .brand-image{width:300px;height:82px}
+  .home-hero{height:72vh}
+}
+@media(max-width:760px){
+  .site-header{height:122px}
+  .brand-image{width:235px;height:68px}
+  footer .brand-image{width:285px;height:92px}
+}
+@media(max-width:420px){
+  .brand-image{width:210px;height:62px}
+  footer .brand-image{width:255px;height:84px}
+}
