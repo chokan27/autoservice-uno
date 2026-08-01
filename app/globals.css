@@ -144,6 +144,58 @@ footer p{color:rgba(255,255,255,.76)}
   footer,footer p,footer .footer-link{font-size:12px}
 }
 
+/* Variante più energica: rosso e bianco, sempre minimale. */
+.home-stage{background:#f4f1ef}
+.home-motion .home-hero{
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 82% 18%,rgba(255,255,255,.98) 0 14%,rgba(255,255,255,.25) 34%,transparent 51%),
+    linear-gradient(118deg,#f7f4f2 0 53%,#f1e8e7 53.1% 65%,#d7192d 65.1% 83%,#a90d22 100%);
+}
+.home-motion .home-hero:before{
+  background:
+    linear-gradient(116deg,transparent 0 26%,rgba(215,25,45,.08) 26.15% 38%,transparent 38.15%),
+    linear-gradient(90deg,rgba(17,23,34,.04) 1px,transparent 1px),
+    linear-gradient(0deg,rgba(17,23,34,.025) 1px,transparent 1px);
+  background-size:auto,72px 100%,100% 72px;
+  mask-image:linear-gradient(90deg,#000 0 64%,rgba(0,0,0,.25) 86%,transparent);
+}
+.home-motion .home-hero:after{border-color:rgba(17,23,34,.09)}
+.home-motion .home-copy{padding:38px 46px;background:rgba(255,255,255,.88);box-shadow:0 24px 70px rgba(84,15,27,.13);backdrop-filter:blur(8px)}
+.home-motion .home-copy .eyebrow{color:var(--red)}
+.home-motion .home-copy h1{color:var(--ink)}
+.home-motion .home-copy h1 span{color:var(--red)}
+.home-motion .home-copy>p:last-of-type{color:#555c66}
+.home-motion .ghost-button{color:var(--ink);border-color:rgba(17,23,34,.5);background:rgba(255,255,255,.45)}
+.home-motion .ghost-button:hover{color:#fff;background:var(--ink)}
+.home-motion .scroll-cue{color:rgba(17,23,34,.7)}
+.home-motion .scroll-cue b{color:var(--red)}
+
+.home-motion .home-services{
+  color:#fff;
+  background:
+    radial-gradient(circle at 88% 12%,rgba(255,255,255,.22),transparent 28%),
+    radial-gradient(circle at 8% 90%,rgba(117,0,19,.42),transparent 38%),
+    linear-gradient(135deg,#a90d22 0%,#d7192d 48%,#ef334e 100%);
+}
+.home-motion .home-services:before{background:linear-gradient(120deg,transparent 0 70%,rgba(255,255,255,.18) 70.15% 82%,transparent 82.15%)}
+.home-motion .home-services-title{background:#fff;color:var(--ink);box-shadow:16px 16px 0 rgba(91,0,15,.28)}
+.home-motion .home-services-title .eyebrow{color:var(--red)}
+.home-motion .home-services-title>a{border-bottom-color:rgba(17,23,34,.4)}
+.home-motion .home-services-grid{border-color:rgba(255,255,255,.28);box-shadow:0 22px 60px rgba(82,0,14,.22)}
+.home-motion .home-services-grid>a{color:var(--ink);background:rgba(255,255,255,.96);border-right-color:rgba(17,23,34,.12);border-bottom-color:rgba(17,23,34,.12);border-top-color:#8d0a1d}
+.home-motion .home-services-grid>a:hover{background:#fff;box-shadow:0 15px 36px rgba(83,0,15,.22)}
+.home-motion .home-services-grid p{color:#61666e}
+.home-motion .services-watermark{opacity:.09;color:#fff}
+.home-motion .motion-progress{background:rgba(17,23,34,.2)}
+.home-motion .motion-progress span{background:#8d0a1d}
+
+@media(max-width:760px){
+  .home-motion .home-hero{background:linear-gradient(145deg,#fff 0 64%,#d7192d 64.2% 84%,#a90d22 84.2%)}
+  .home-motion .home-copy{padding:28px 22px}
+  .home-motion .home-services-title{box-shadow:8px 8px 0 rgba(91,0,15,.25)}
+}
+
 @media(max-width:760px){
   .site-header{height:106px;padding:8px 20px 0}
   .site-header nav{gap:18px;padding:9px 0 12px;font-size:10px;justify-content:space-between}
