@@ -22,6 +22,7 @@ const ui = localFont({
 export const metadata: Metadata = {
   title: "Autoservice UNO | Officina e Gommista a Milano",
   description: "Autoriparazioni, servizio gommista e controlli auto in Via Caboto 39/B a Milano.",
+  icons: { icon: "/autoservice-uno/favicon.svg", shortcut: "/autoservice-uno/favicon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

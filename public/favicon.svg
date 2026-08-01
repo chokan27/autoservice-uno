@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="UNO">
+  <defs><radialGradient id="steel" cx="38%" cy="32%" r="72%"><stop offset="0" stop-color="#f4f5f6"/><stop offset=".55" stop-color="#c9ced3"/><stop offset="1" stop-color="#7e8790"/></radialGradient><linearGradient id="red" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f04445"/><stop offset="1" stop-color="#b30e20"/></linearGradient></defs>
+  <circle cx="90" cy="90" r="78" fill="#111722" stroke="#D7192D" stroke-width="10"/><circle cx="90" cy="90" r="66" fill="#202733" stroke="#05070b" stroke-width="5"/><circle cx="90" cy="90" r="52" fill="url(#steel)" stroke="#FFFFFF" stroke-width="3"/><circle cx="90" cy="90" r="19" fill="#151a22" stroke="#6f7881" stroke-width="4"/>
+  <g fill="#111722"><circle cx="90" cy="57" r="6"/><circle cx="121" cy="80" r="6"/><circle cx="109" cy="117" r="6"/><circle cx="71" cy="117" r="6"/><circle cx="59" cy="80" r="6"/></g><circle cx="90" cy="90" r="7" fill="#05070b"/><path d="M140 51c17 8 27 22 27 39s-10 31-27 39c-8-12-12-26-12-39s4-27 12-39Z" fill="url(#red)" stroke="#FFFFFF" stroke-width="5"/>
+</svg>
