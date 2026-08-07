@@ -23,3 +23,10 @@ export function Footer() {
     <div><p className="footer-label">PARLIAMO DELLA TUA AUTO</p><Link className="footer-action" href="/contatti">CONTATTI →</Link></div>
   </footer>;
 }
+
+export function FinalCta({ eyebrow, title, text }: { eyebrow: string; title: string; text: string }) {
+  return <section className="final-cta">
+    <div><p className="eyebrow">{eyebrow}</p><h2>{title}</h2><p>{text}</p></div>
+    <Link className="button primary" href="/contatti">PRENOTA UN APPUNTAMENTO <span>→</span></Link>
+  </section>;
+}

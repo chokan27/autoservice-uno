@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Footer, Header } from "./components";
+import { FinalCta, Footer, Header } from "./components";
 
 const featured = [
   ["Diagnosi elettronica", "Spie, centraline e ricerca precisa dei guasti."],
@@ -35,7 +35,8 @@ export default function Home() {
       <div className="service-preview-grid">{featured.map(([title,text],i)=><Link href="/servizi" key={title}><small>0{i+1}</small><h3>{title}</h3><p>{text}</p><span>SCOPRI DI PIÙ →</span></Link>)}</div>
     </section>
 
-    <section className="roadside"><div><p className="eyebrow">QUANDO L’AUTO SI FERMA</p><h2>NON RESTARE FERMO.<br /><span>CI PENSIAMO NOI.</span></h2></div><div><p>Soccorso stradale, recupero del veicolo e trasporto in officina. Cristian è il riferimento per assistenza e appuntamenti.</p><Link className="button primary" href="/contatti">RICHIEDI ASSISTENZA →</Link></div></section>
+    <section className="roadside"><div><p className="eyebrow red">QUANDO L’AUTO SI FERMA</p><h2>NON RESTARE FERMO.<br /><span>CI PENSIAMO NOI.</span></h2></div><div><p>Soccorso stradale, recupero del veicolo e trasporto in officina. Cristian è il riferimento per assistenza e appuntamenti.</p><Link className="text-link" href="/contatti">RICHIEDI ASSISTENZA →</Link></div></section>
+    <FinalCta eyebrow="AUTO SERVICE UNO · MILANO" title="PRENOTA IL TUO PROSSIMO INTERVENTO." text="Raccontaci cosa serve alla tua auto: organizziamo insieme controllo, tempi e lavorazione." />
     <Footer />
   </main>;
 }
