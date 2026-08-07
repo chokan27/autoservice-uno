@@ -1,13 +1,25 @@
 import Link from "next/link";
 
+const base = "/autoservice-uno";
+
 export function Header() {
-  return <header className="site-header">
-    <Link className="logo" href="/" aria-label="Autoservice UNO, home"><img className="brand-logo" src="/autoservice-uno/logo-uno.svg?v=11" alt="UNO" /><span>AUTOSERVICE</span></Link>
-    <nav aria-label="Navigazione principale"><Link href="/">Home</Link><Link href="/servizi">Servizi</Link><Link href="/officina">Officina & Team</Link><Link href="/contatti">Contatti</Link></nav>
-    <Link className="header-cta" href="/contatti">PRENOTA</Link>
-  </header>;
+  return <>
+    <div className="topbar"><span>Via Caboto 39/B · Milano</span><span>Officina · Gommista · Soccorso stradale</span></div>
+    <header className="site-header">
+      <Link className="brand" href="/" aria-label="Auto Service UNO, home">
+        <img src={`${base}/logo-auto-service.png`} alt="Auto Service UNO · Officina e Gommista" />
+      </Link>
+      <nav aria-label="Navigazione principale"><Link href="/">Home</Link><Link href="/servizi">Servizi</Link><Link href="/contatti">Contatti</Link></nav>
+      <Link className="header-cta" href="/contatti">PRENOTA <span>→</span></Link>
+    </header>
+  </>;
 }
 
 export function Footer() {
-  return <footer><Link className="logo" href="/"><img className="brand-logo" src="/autoservice-uno/logo-uno.svg?v=11" alt="UNO" /><span>AUTOSERVICE</span></Link><p>Via Caboto 39/B · Milano</p><p>Assistenza completa per la tua auto</p><Link className="footer-link" href="/contatti">CONTATTI →</Link></footer>;
+  return <footer className="site-footer">
+    <div className="footer-brand"><img src={`${base}/logo-auto-service.png`} alt="Auto Service UNO" /><p>Competenza concreta, spiegazioni chiare e un contatto sempre diretto.</p></div>
+    <div><p className="footer-label">DOVE SIAMO</p><p>Via Caboto 39/B<br />Milano</p></div>
+    <div><p className="footer-label">SERVIZI</p><Link href="/servizi">Diagnosi e meccanica</Link><Link href="/servizi">Pneumatici e controlli</Link><Link href="/servizi">Soccorso stradale</Link></div>
+    <div><p className="footer-label">PARLIAMO DELLA TUA AUTO</p><Link className="footer-action" href="/contatti">CONTATTI →</Link></div>
+  </footer>;
 }

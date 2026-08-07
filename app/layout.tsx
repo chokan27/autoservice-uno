@@ -20,27 +20,11 @@ const ui = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Site under maintenance | Auto Service UNO",
-  description: "Il sito di Auto Service UNO è temporaneamente in manutenzione.",
+  title: "Auto Service UNO | Officina e Gommista a Milano",
+  description: "Autoriparazioni, diagnosi, pneumatici, controlli e soccorso stradale in Via Caboto 39/B a Milano.",
   icons: { icon: "/autoservice-uno/favicon.svg", shortcut: "/autoservice-uno/favicon.svg" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  void children;
-  return (
-    <html lang="it">
-      <body className={`${archivo.variable} ${ui.variable}`}>
-        <main className="maintenance-page">
-          <div className="maintenance-accent" aria-hidden="true" />
-          <section className="maintenance-card" aria-labelledby="maintenance-title">
-            <p className="maintenance-brand">AUTO SERVICE <strong>UNO</strong> · MILANO</p>
-            <h1 id="maintenance-title">SITE UNDER<br /><span>MAINTENANCE</span></h1>
-            <p>Stiamo lavorando al nuovo sito. Torneremo online presto.</p>
-            <div className="maintenance-line" aria-hidden="true" />
-            <address>Via Caboto 39/B · Milano</address>
-          </section>
-        </main>
-      </body>
-    </html>
-  );
+  return <html lang="it"><body className={`${archivo.variable} ${ui.variable}`}>{children}</body></html>;
 }
