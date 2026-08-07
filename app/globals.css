@@ -40,3 +40,19 @@
 @media(max-width:900px){.problem-band{grid-template-columns:1fr 1.5fr}.problem-band .button{grid-column:2;width:max-content}.final-cta{align-items:flex-start;flex-direction:column}.contact-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.problem-band,.location-band{grid-template-columns:1fr}.problem-band .button{grid-column:auto}.contact-grid{grid-template-columns:1fr}.contact-person{min-height:360px}.final-cta{padding:52px 20px}.final-cta .button{width:100%}}
 @media(max-width:520px){.page-hero{min-height:400px}.catalog-intro{padding:55px 20px 30px}.service-catalog{padding-top:15px}.problem-band,.location-band{padding:48px 20px}.problem-band .button,.location-band .button{width:100%}.contact-grid{padding-top:15px}.team-note{padding-top:52px;padding-bottom:52px}}
+
+/* Home scura: palette definitiva antracite, bordeaux e rosso UNO. */
+body{background:#101722;color:#f3f0ed}
+.topbar{background:#080b11;color:#8f8b8e}
+.site-header{background:#101722;color:#f3f0ed;border-bottom-color:rgba(229,22,48,.72);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.brand img{filter:brightness(0) invert(1);opacity:.94}
+.hero{background:#101722}.hero:before{background:linear-gradient(126deg,transparent 0 54%,rgba(53,23,36,.74) 54% 66%,transparent 66%),linear-gradient(140deg,transparent 0 67%,rgba(87,21,35,.55) 67% 82%,transparent 82%),radial-gradient(circle at 84% 35%,rgba(229,22,48,.1),transparent 32%)}
+.hero-geometry{border-left-color:rgba(255,255,255,.07);background:linear-gradient(135deg,transparent 32%,rgba(87,21,35,.5) 32% 49%,rgba(53,23,36,.6) 49% 67%,transparent 67%)}
+.section-light,.intro,.roadside{background:#151b27;color:#f3f0ed}.intro{border-top:1px solid rgba(255,255,255,.07)}
+.intro-mark{background:#0b1018}.intro-copy>p:not(.eyebrow),.roadside>div:last-child>p{color:#aaa7aa}.intro-copy ul{border-color:rgba(255,255,255,.12)}
+.services-preview{background:#101722}.service-preview-grid>a{background:#191d29}.service-preview-grid>a:hover{background:#211d29}.service-preview-grid p{color:#aaa7aa}.service-preview-grid{border-top-color:#e51630}
+.roadside{border-top-color:rgba(255,255,255,.08)}
+.final-cta{background:linear-gradient(110deg,#b71128,#e51630 70%,#a90d22)}
+.site-footer{background:#080b11}.site-footer .footer-brand img{filter:brightness(0) invert(1)}
+.feature-strip{background:#d4142c}.feature-strip>a:hover{background:#a90d22}
+@media(max-width:520px){.brand img{width:172px}.hero:before{background:linear-gradient(145deg,transparent 0 64%,rgba(87,21,35,.55) 64% 82%,transparent 82%)}}
