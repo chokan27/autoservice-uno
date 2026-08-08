@@ -56,3 +56,33 @@ body{background:#101722;color:#f3f0ed}
 .site-footer{background:#080b11}.site-footer .footer-brand img{filter:brightness(0) invert(1)}
 .feature-strip{background:#d4142c}.feature-strip>a:hover{background:#a90d22}
 @media(max-width:520px){.brand img{width:172px}.hero:before{background:linear-gradient(145deg,transparent 0 64%,rgba(87,21,35,.55) 64% 82%,transparent 82%)}}
+
+/* Struttura multipagina definitiva */
+.home-hero{min-height:calc(100vh - 117px)}
+.home-services{padding:78px max(7vw,30px);display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;background:#151b27;color:#f3f0ed;border-top:1px solid rgba(255,255,255,.08)}
+.home-services-heading h2,.home-trust h2,.workshop-story h2,.workshop-link h2{margin:0;font-size:clamp(38px,4.5vw,66px);line-height:.94;letter-spacing:-.05em;text-transform:uppercase}
+.home-services-heading h2 span,.home-trust h2 span,.workshop-story h2 span,.workshop-link h2 span{color:var(--red)}
+.home-services-heading .text-link{margin-top:32px}
+.home-service-list{border-top:3px solid var(--red)}
+.home-service-list>a{min-height:122px;padding:22px 20px;display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:18px;border-bottom:1px solid rgba(255,255,255,.11)}
+.home-service-list>a:hover{padding-left:28px;background:rgba(255,255,255,.035)}
+.home-service-list small{color:var(--red);font:800 11px var(--font-mono)}.home-service-list h3{margin:0 0 7px;font-size:21px;text-transform:uppercase}.home-service-list p{margin:0;color:#aaa7aa;font-size:14px}.home-service-list b{color:var(--red);font-size:22px}
+.home-trust{padding:78px max(7vw,30px);display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:9vw;background:#101722;color:#f3f0ed;border-top:1px solid rgba(255,255,255,.07)}
+.home-trust>div:last-child>p{margin:0 0 28px;color:#aaa7aa;font-size:17px;line-height:1.7}.home-trust .button{width:max-content}
+.page-hero{background:linear-gradient(105deg,#0d131d 0%,#151b27 62%,#261620 100%)}
+.catalog-intro,.service-catalog,.contact-grid,.team-note{background:#151b27}
+.service-catalog article,.contact-person{background:#1b2230;color:#f3f0ed;border-left-color:var(--red)}
+.service-catalog article:hover,.contact-person:hover{background:#222938;box-shadow:0 18px 42px rgba(0,0,0,.2)}
+.service-catalog article>p,.contact-person>p:not(.eyebrow){color:#aaa7aa}.service-catalog ul,.contact-status{border-color:rgba(255,255,255,.12)}
+.problem-band,.location-band,.contact-bottom{background:#0d131d}
+.workshop-story{padding:85px max(7vw,30px);display:grid;grid-template-columns:.75fr 1.25fr;gap:8vw;align-items:center;background:#151b27;color:#f3f0ed}
+.story-mark{min-height:340px;padding:48px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#0b1018 0 60%,#5f1527 60%);border-bottom:5px solid var(--red)}
+.story-mark strong{color:var(--red);font-size:94px;line-height:.8}.story-mark span{margin-top:24px;font:800 11px var(--font-mono);letter-spacing:.12em}
+.workshop-story>div:last-child>p:not(.eyebrow){color:#aaa7aa;font-size:17px;line-height:1.7}
+.team-grid{padding:0 max(7vw,30px) 85px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#151b27}
+.team-grid article{min-height:270px;padding:30px;display:flex;flex-direction:column;background:#1b2230;border-top:3px solid var(--red)}
+.team-grid small{color:var(--red);font:800 10px var(--font-mono);letter-spacing:.1em}.team-grid h2{margin:38px 0 12px;font-size:32px}.team-grid p{margin:0;color:#aaa7aa;line-height:1.6}
+.workshop-link{padding:72px max(7vw,30px);display:flex;align-items:center;justify-content:space-between;gap:50px;background:#101722;color:#f3f0ed;border-top:1px solid rgba(255,255,255,.08)}
+.dark-button{background:#0b1018;color:#fff}
+@media(max-width:900px){.home-services,.home-trust,.workshop-story{grid-template-columns:1fr}.team-grid{grid-template-columns:1fr 1fr}.workshop-link{align-items:flex-start;flex-direction:column}}
+@media(max-width:520px){.home-hero{min-height:570px}.home-services,.home-trust,.workshop-story,.workshop-link{padding:55px 20px}.home-service-list{margin-top:10px}.team-grid{padding:0 20px 55px;grid-template-columns:1fr}.story-mark{min-height:270px;padding:34px}.workshop-link .button{width:100%}.page-hero h1{font-size:44px}.contact-person h2{font-size:36px}}
